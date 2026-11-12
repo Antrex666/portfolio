@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prince Michael Eyaba | Design Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#1E1E38", // Deep Indigo for trust/professionalism
+              accent: "#FF6B6B", // Coral for creativity/energy
+              accentHover: "#E85555",
+              bgLight: "#F8F9FA",
+            },
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+              display: ["Space Grotesk", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+      h1,
+      h2,
+      h3,
+      .font-display {
+        font-family: "Space Grotesk", sans-serif;
+      }
+
+      /* Custom scrollbar for the work slider */
+      .work-slider::-webkit-scrollbar {
+        height: 8px;
+      }
+      .work-slider::-webkit-scrollbar-track {
+        background: #e2e8f0;
+        border-radius: 4px;
+      }
+      .work-slider::-webkit-scrollbar-thumb {
+        background: #1e1e38;
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body class="bg-bgLight text-gray-800 antialiased overflow-x-hidden">
+    <!-- Header -->
+    <header
+      class="px-6 py-6 md:px-12 flex justify-between items-center max-w-7xl mx-auto"
+    >
+      <a href="#" class="font-display font-bold text-2xl text-primary"
+        >Prince Michael<span class="text-accent">.</span></a
+      >
+      <a
+        href="#contact"
+        class="bg-primary text-white px-6 py-3 rounded-full font-medium hover:bg-gray-800 transition-colors shadow-lg shadow-primary/20"
+        >Free Consultation</a
+      >
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+      <section
+        class="px-6 py-12 md:px-12 md:py-24 max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center"
+      >
+        <div class="space-y-6 text-center md:text-left">
+          <h1 class="text-5xl md:text-7xl font-bold text-primary leading-tight">
+            Design that <br />
+            <span class="text-accent">speaks</span> to people.
+          </h1>
+          <p class="text-lg text-gray-600 max-w-md mx-auto md:mx-0">
+            I'm Prince Michael Eyaba, a multidisciplinary designer specializing
+            in creating beautiful, user-centric digital experiences that drive
+            results.
+          </p>
+          <div class="pt-4 flex justify-center md:justify-start gap-4">
+            <a
+              href="#work"
+              class="bg-accent text-white px-8 py-4 rounded-full font-medium hover:bg-accentHover transition-colors shadow-lg shadow-accent/30"
+              >View My Work</a
+            >
+          </div>
+        </div>
+        <div class="relative flex justify-center">
+          <!-- Abstract shape background -->
+          <div
+            class="absolute inset-0 bg-gradient-to-tr from-accent/20 to-primary/10 rounded-full blur-3xl transform scale-110"
+          ></div>
+          <img
+            src="https://images.unsplash.com/photo-1549692520-acc6669e2f0c?auto=format&fit=crop&w=800&q=80"
+            alt="Prince Michael Eyaba"
+            class="relative z-10 w-72 h-72 md:w-96 md:h-96 object-cover rounded-full border-8 border-white shadow-2xl"
+          />
+        </div>
+      </section>
+
+      <!-- Skills Section (CSS GRID) -->
+      <section class="px-6 py-20 md:px-12 bg-white">
+        <div class="max-w-7xl mx-auto">
+          <div class="text-center md:text-left mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">
+              My Skills
+            </h2>
+            <p class="text-gray-600 max-w-2xl">
+              A diverse toolkit to bring your brand's vision to life.
+            </p>
+          </div>
+
+          <!-- The CSS Grid Container -->
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-[200px]"
+          >
+            <!-- Grid Item 1: Spans 2 cols on large screens -->
+            <div
+              class="bg-primary text-white rounded-3xl p-8 flex flex-col justify-between lg:col-span-2 relative overflow-hidden group"
+            >
+              <div
+                class="absolute -right-10 -bottom-10 opacity-10 group-hover:scale-110 transition-transform duration-500"
+              >
+                <svg class="w-64 h-64" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
+                  />
+                </svg>
+              </div>
+              <h3 class="text-2xl font-bold font-display z-10">
+                Graphic Design
+              </h3>
+              <p class="text-gray-300 text-sm z-10 max-w-xs">
+                Creating stunning visual identities, branding, and marketing
+                materials.
+              </p>
+            </div>
+
+            <!-- Grid Item 2 -->
+            <div
+              class="bg-accent text-white rounded-3xl p-8 flex flex-col justify-between relative overflow-hidden group"
+            >
+              <h3 class="text-2xl font-bold font-display z-10">UI/UX Design</h3>
+              <p class="text-white/80 text-sm z-10">
+                Designing intuitive and engaging user interfaces.
+              </p>
+            </div>
+
+            <!-- Grid Item 3 -->
+            <div
+              class="bg-gray-100 text-primary rounded-3xl p-8 flex flex-col justify-between hover:bg-gray-200 transition-colors relative overflow-hidden"
+            >
+              <h3 class="text-2xl font-bold font-display z-10">App Design</h3>
+              <p class="text-gray-600 text-sm z-10">
+                Mobile-first experiences for iOS and Android.
+              </p>
+            </div>
+
+            <!-- Grid Item 4: Spans 2 cols -->
+            <div
+              class="bg-accent/10 border border-accent/20 text-primary rounded-3xl p-8 flex flex-col justify-between lg:col-span-2 relative overflow-hidden"
+            >
+              <h3 class="text-2xl font-bold font-display z-10">
+                Motion Graphics
+              </h3>
+              <p class="text-gray-600 text-sm z-10 max-w-sm">
+                Bringing static designs to life with purposeful, engaging
+                animations.
+              </p>
+            </div>
+
+            <!-- Grid Item 5 -->
+            <div
+              class="bg-primary text-white rounded-3xl p-8 flex flex-col justify-between relative overflow-hidden"
+            >
+              <h3 class="text-2xl font-bold font-display z-10">
+                Illustrations
+              </h3>
+              <p class="text-gray-300 text-sm z-10">
+                Custom digital art to give your project a unique edge.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Work Section (Horizontal Scroll) -->
+      <section id="work" class="px-6 py-20 md:px-12 max-w-7xl mx-auto">
+        <div class="flex justify-between items-end mb-12">
+          <div>
+            <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">
+              My Work
+            </h2>
+            <p class="text-gray-600">
+              Swipe to see some of my recent projects.
+            </p>
+          </div>
+          <div class="hidden md:flex gap-2">
+            <span class="text-sm text-gray-400"
+              >Scroll horizontally &rarr;</span
+            >
+          </div>
+        </div>
+
+        <!-- Slider Container -->
+        <div
+          class="work-slider flex gap-6 overflow-x-auto snap-x snap-mandatory pb-8 px-2"
+        >
+          <!-- Work Card 1 -->
+          <div
+            class="min-w-[300px] md:min-w-[400px] snap-center bg-white p-4 rounded-3xl shadow-sm hover:shadow-xl transition-shadow"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80"
+              alt="Project 1"
+              class="w-full h-64 object-cover rounded-2xl mb-4"
+            />
+            <h3 class="font-bold text-xl text-primary mb-2">
+              FinTech Dashboard
+            </h3>
+            <p class="text-gray-500 text-sm">
+              UI/UX Design, Data Visualization
+            </p>
+          </div>
+
+          <!-- Work Card 2 -->
+          <div
+            class="min-w-[300px] md:min-w-[400px] snap-center bg-white p-4 rounded-3xl shadow-sm hover:shadow-xl transition-shadow"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=600&q=80"
+              alt="Project 2"
+              class="w-full h-64 object-cover rounded-2xl mb-4"
+            />
+            <h3 class="font-bold text-xl text-primary mb-2">
+              E-Commerce Brand Identity
+            </h3>
+            <p class="text-gray-500 text-sm">Graphic Design, Logo Design</p>
+          </div>
+
+          <!-- Work Card 3 -->
+          <div
+            class="min-w-[300px] md:min-w-[400px] snap-center bg-white p-4 rounded-3xl shadow-sm hover:shadow-xl transition-shadow"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1616469829581-73993eb86b02?auto=format&fit=crop&w=600&q=80"
+              alt="Project 3"
+              class="w-full h-64 object-cover rounded-2xl mb-4"
+            />
+            <h3 class="font-bold text-xl text-primary mb-2">
+              Fitness Mobile App
+            </h3>
+            <p class="text-gray-500 text-sm">App Design, Prototyping</p>
+          </div>
+
+          <!-- Work Card 4 -->
+          <div
+            class="min-w-[300px] md:min-w-[400px] snap-center bg-white p-4 rounded-3xl shadow-sm hover:shadow-xl transition-shadow"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=600&q=80"
+              alt="Project 4"
+              class="w-full h-64 object-cover rounded-2xl mb-4"
+            />
+            <h3 class="font-bold text-xl text-primary mb-2">
+              3D Product Animation
+            </h3>
+            <p class="text-gray-500 text-sm">Motion Graphics, 3D</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer
+      id="contact"
+      class="bg-primary text-white py-20 px-6 md:px-12 text-center rounded-t-[3rem] mt-12"
+    >
+      <div class="max-w-2xl mx-auto space-y-8">
+        <h2 class="text-4xl md:text-5xl font-bold font-display">
+          Let's work together.
+        </h2>
+        <p class="text-gray-300 text-lg">
+          Have a project in mind? I'd love to hear about it. Let's create
+          something amazing.
+        </p>
+        <a
+          href="mailto:hello@princmichael.com"
+          class="inline-block bg-accent text-white px-10 py-5 rounded-full font-bold text-lg hover:bg-accentHover transition-colors shadow-lg shadow-accent/30"
+          >Book a Call with Me</a
+        >
+
+        <div
+          class="pt-12 border-t border-gray-700 mt-12 flex flex-col md:flex-row justify-between items-center gap-4"
+        >
+          <p class="text-gray-400 text-sm">
+            &copy; 2026 Prince Michael Eyaba. All rights reserved.
+          </p>
+          <div class="flex gap-4">
+            <a href="#" class="text-gray-400 hover:text-white transition"
+              >Twitter</a
+            >
+            <a href="#" class="text-gray-400 hover:text-white transition"
+              >LinkedIn</a
+            >
+            <a href="#" class="text-gray-400 hover:text-white transition"
+              >Dribbble</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
